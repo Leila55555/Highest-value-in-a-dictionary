@@ -1,12 +1,12 @@
 def get_overall_high_score(scores_dictionary):
     highscore = 0
     if len(scores_dictionary) > 0:
-        for ke in scores_dictionary.keys():
-            for val in scores_dictionary[ke]:
-                if val > highscore:
-                    highscore = val
+        for key in scores_dictionary.keys():
+            for value in scores_dictionary[key]:
+                if value > highscore:
+                    highscore = value
     return highscore
 scores = {
-    "Steven":[2020,980], "Jane":[1040,2022,525,1024]
+    "player1":[2020,980], "player2":[1040,2022,525,1024]
 }
 print(get_overall_high_score(scores))
